@@ -5,7 +5,7 @@ int main()
 	// OPTIONS
 	// 
 	// Window size
-	MoveWindow(GetConsoleWindow(), 50, 50, 650, 700, true);
+	MoveWindow(GetConsoleWindow(), 50, 50, 660, 700, true);
 	Tafl tafl;
 
 	while (true)
@@ -14,6 +14,9 @@ int main()
 		tafl.addFigurines();
 		tafl.displayboard(999, 999);
 		tafl.turn();
+
+
+		// Victory
 		bool isVictory = tafl.isVictory();
 		if (isVictory == 1)
 		{

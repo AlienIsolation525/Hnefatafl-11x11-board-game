@@ -14,6 +14,9 @@
 #define coutwidth 2 
 #define whitefirst 1
 
+#define battlelog "Battlelog.txt"
+#define quotes "Edda quotes.txt"
+
 using namespace std;
 
 class Tafl
@@ -54,6 +57,9 @@ public:
 
 	// Kill the dead
 	void killthedead();
+
+	// Saves log of battle
+	void savebattlelog(int x, int y, int dx, int dy);
 
 private:
 

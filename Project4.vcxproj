@@ -136,6 +136,7 @@
     <ClInclude Include="Tafl.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\..\..\Desktop\rule%27s book.txt" />
     <Text Include="Battlelog.txt" />
     <Text Include="Edda quotes.txt" />
   </ItemGroup>

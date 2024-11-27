@@ -123,7 +123,9 @@ void Tafl::constructEmptyboard()
 		for (int i = 1; i <= boardsizex; i++)
 			for (int j = 1; j <= boardsizey; j++)
 			{
-				if (isCorner(i, j))
+				if (i == 6 && j == 6)
+					board[i][j] = '&';
+				else if (isCorner(i, j))
 					board[i][j] = '@';
 				else
 					board[i][j] = '#';
@@ -181,7 +183,7 @@ void Tafl::displayboard(int x, int y)
 			{
 				if (board[i][j] == '#')
 					cout << setw(coutwidth) << color<12, 0> << board[i][j] << color;
-				else if (board[i][j] == '@')
+				else if (board[i][j] == '@' || board[i][j] == '&')
 					cout << setw(coutwidth) << color<14, 0> << board[i][j] << color;
 				else
 				{
@@ -244,6 +246,7 @@ void Tafl::turn()
 		if (whitefirst == 1 && turncount % 2 != 0) wotanturn = 1;
 		else wotanturn = 0;
 		displayinfo();
+		// Enter cords of figure to move
 		while (true) 
 		{
 
@@ -270,6 +273,8 @@ void Tafl::turn()
 			system("cls");
 			displayboard(x, y);
 			displayinfo();
+
+			// Enter destination cords
 			while (true)
 			{
 				cout << "Where you want to move figure? \n      (111 111 to choose figure again):\n           ";
@@ -307,10 +312,24 @@ void Tafl::turn()
 					break;
 				}
 		}
+		
+		// Save battle log
+		savebattlelog(x, y, dx, dy);
 
 		// Check is there dead ones if so - delete them from the board
 		killthedead();
 	};
+
+void Tafl::savebattlelog(int x, int y, int dx, int dy)
+{
+	string temp = "Turn " + to_string(turncount) + " Move: " + to_string(x) + ";" + to_string(y) + " -> " +
+		to_string(dx) + ";" + to_string(dy) + " (" + board[x][y] + ") ";
+
+	ofstream bl(battlelog, ios::app);
+	bl << temp;
+	bl << endl;
+	bl.close();
+}
 
 void Tafl::displayinfo()
 {
@@ -344,6 +363,7 @@ void Tafl::displayinfo()
 bool Tafl::isturnvalid(int x, int y, int dx, int dy)
 	{
 		bool flag = 1;
+
 		// Out of board exñ
 		if (dx > boardsizex - 2 || dx < 1)flag = 0;
 		if (dy > boardsizey - 2 || dy < 1)flag = 0;
@@ -357,10 +377,18 @@ bool Tafl::isturnvalid(int x, int y, int dx, int dy)
 			{
 				if (x == Hnefix && y == Hnefiy)
 				{
-					if (board[x][i] != '#' && board[x][i] != '@') flag = 0;
+					if (board[x][i] != '#' && board[x][i] != '@' && board[x][i] != '&') 
+					{
+						flag = 0;
+						break;
+					}
 				}
 				else
-					if (board[x][i] != '#') flag = 0;
+					if (board[x][i] != '#' || board[dx][dy] == '&') 
+					{
+						flag = 0;
+						break;
+					}
 			}
 		}
 		else if (y > dy)// left
@@ -369,10 +397,18 @@ bool Tafl::isturnvalid(int x, int y, int dx, int dy)
 			{
 				if (x == Hnefix && y == Hnefiy)
 				{
-					if (board[x][i] != '#' && board[x][i] != '@') flag = 0;
+					if (board[x][i] != '#' && board[x][i] != '@' && board[x][i] != '&') 
+					{
+						flag = 0;
+						break;
+					}
 				}
 				else
-					if (board[x][i] != '#') flag = 0;
+					if (board[x][i] != '#' || board[dx][dy] == '&') 
+					{
+						flag = 0;
+						break;
+					}
 			}
 		}
 		else if (x < dx)// down
@@ -381,10 +417,18 @@ bool Tafl::isturnvalid(int x, int y, int dx, int dy)
 			{
 				if (x == Hnefix && y == Hnefiy)
 				{
-					if (board[i][y] != '#' && board[i][y] != '@') flag = 0;
+					if (board[i][y] != '#' && board[i][y] != '@' && board[i][y] != '&')
+					{
+						flag = 0;
+						break;
+					}
 				}
 				else
-					if (board[i][y] != '#') flag = 0;
+					if (board[i][y] != '#' || board[dx][dy] == '&') 
+					{
+						flag = 0;
+						break;
+					}
 			}
 		}
 		else if (x > dx)// up
@@ -393,10 +437,18 @@ bool Tafl::isturnvalid(int x, int y, int dx, int dy)
 			{
 				if (x == Hnefix && y == Hnefiy)
 				{
-					if (board[i][y] != '#' && board[i][y] != '@') flag = 0;
+					if (board[i][y] != '#' && board[i][y] != '@' && board[i][y] != '&')
+					{
+						flag = 0;
+						break;
+					}
 				}
 				else
-					if (board[i][y] != '#') flag = 0;
+					if (board[i][y] != '#' || board[dx][dy] == '&') 
+					{
+						flag = 0;
+						break;
+					}
 			}
 		}
 		return flag;

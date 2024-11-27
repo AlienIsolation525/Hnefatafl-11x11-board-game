@@ -31,7 +31,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Battlelog.txt" />
     <Text Include="Edda quotes.txt" />
+    <Text Include="..\..\..\Desktop\rule%27s book.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Battlelog.txt" />
   </ItemGroup>
 </Project>
