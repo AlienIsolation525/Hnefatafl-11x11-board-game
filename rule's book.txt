@@ -1,0 +1,126 @@
+Eng
+@=============================================================================ⵈ━══════╗◊╔══════━ⵈ===========================================================================================@
+|																																															 |				
+|1. Two players, the king's side vs attackers. There are twice as many attackers as defenders.																					   		     |
+|Copenhagen Hnefatafl 11x11 board																																							 |
+|Initial set-up.																																											 |
+|																																															 |
+|2. The attackers'(Wotan's) side moves first, the players then take turns.																				  								     |
+|																																															 |
+|3. All pieces move any number of vacant squares along a row or a column, like a rook in chess.																								 |
+|move tafl piece																																											 |
+|																																															 |
+| Moving a piece:																																											 |
+| # B # # # #																																												 |
+| ->3 tiles right																																											 |
+| # # # # B #																																												 |
+|																																															 |
+|4. Capture																																													 |
+| All pieces except the king are captured if sandwiched between two enemy pieces, or between an enemy piece and a restricted square. The two enemy pieces should be on the square above	     |
+|and below or on the squares left and right of the attacked piece, i.e. not diagonally.																									     |
+| A piece is only captured if the trap is closed by the aggressor's move, it is therefore permitted to move in between two enemy pieces. The king may take part in captures.                 |
+|captured tafl piece captured tafl piece captured tafl piece captured tafl piece captured tafl piece.																						 |
+|																						    																								 |
+| Capture of pieces:																																										 |																			 |
+| # # # # #  # # # # @  # # # # #																																							 |
+| # W B W #  # # # # B  # & B H #																																							 |
+| # # # # #  # # # # W  # # # # #																																							 |
+|																																															 |
+|5. Restricted squares																																										 |																			 |
+| Restricted squares may only be occupied by the king. The central restricted square is called the throne. It is allowed for the king to re-enter the throne, and all pieces may pass	     |
+|through the throne when it is empty.																																						 |
+| Restricted squares are hostile, which means they can replace one of the two pieces taking part in a capture. The throne is always hostile to the attackers, but only hostile to the 	     |
+|defenders when it is empty.																																								 |
+| The four corner squares are also restricted and hostile, just like the throne																												 |
+| The board edge is NOT hostile.																																							 |
+|																																															 |
+|6. King's side win (White)																																									 |																			 |
+| If the king reaches any corner square, the king has escaped and his side wins:																											 |
+|    - - - -																																												 |
+|         H|																																												 |
+|    	   |																																												 |
+|																																															 |
+|7. Giant's side win(Dark)																																									 |																			 |
+| The giants win if they can capture the king.																																				 |
+| The king is captured when the giants surround him on all four cardinal points, except when he is next to the throne.																	     |
+| If on a square next to the throne, the giants must occupy the three remaining squares around him.																							 |
+|																																															 |
+| The king cannot be captured on the board edge, UNLESS he is the only white piece remaining on the board and is completely surrounded by black (i.e. rule 8).								 |
+|tafl attackers win tafl attackers win tafl attackers win														 																			 |
+| The king is captured:																																										 |																			 |
+|																																															 |
+| # # B # # 																																												 |
+| # B H B #																																													 |
+| # # B # #																																													 |
+|																																															 |
+| The king is not captured:																																									 |																			 |
+|																																															 |
+| # # # # # 																																												 |
+| # B H B #																																													 |
+| # # # # #																																													 |
+|																																															 |
+|8.   If a player cannot move, he loses the game.																																			 |
+|																																															 |	
+@===========================================================================================================================================================================================@
+
+Рус
+@=============================================================================ⵈ━══════╗◊╔══════━ⵈ===========================================================================================@
+|																																															 |				
+|1. Два игрока, сторона короля против атакующих. Нападающих вдвое больше, чем защитников. 																									 |
+|Копенгагенская доска Hnefatafl 11x11 																																					     |
+|Начальная расстановка.																																										 |
+|																																															 |
+|2. Сторона атакующих (Вотана) ходит первой, затем игроки ходят по очереди.																													 |
+|																																															 |
+|3. Все фигуры перемещаются на любое количество свободных клеток по строке или столбцу, как ладья в шахматах.																				 |																				    |
+|																																															 |
+| Перемещение фигуры:																																										 |
+| # B # # # #																																												 |
+| ->3 клетки вправо																																											 |
+| # # # # B #																																												 |
+|																																															 |
+|4. Захват																																													 |
+| Все фигуры, кроме короля, захватываются, если они зажаты между двумя вражескими фигурами или между вражеской фигурой и ограниченным полем. 												 |											    |
+| Фигура считается захваченной только в том случае, если ловушка закрыта ходом агрессора, поэтому ей разрешено перемещаться между двумя вражескими фигурами.								 |
+| Король может принимать участие в захватах.                																   																 |
+|																						    																								 |
+| Захват фигуры:																																											 |
+| # # # # #  # # # # @  # # # # #																																							 |
+| # W B W #  # # # # B  # & B H #																																							 |
+| # # # # #  # # # # W  # # # # #																																							 |
+|																																															 |
+|5. Запретные квадраты																																										 |
+| Ограниченные поля могут быть заняты только королем. Центральное ограниченное поле называется троном. Королю разрешено снова занять трон, и все фигуры могут проходить 					 |
+|через трон, когда он пуст.																																									 |
+| Ограниченные поля являются враждебными, что означает, что они могут заменить одну из двух фигур, участвующих в захвате. Трон всегда враждебен нападающим, но враждебен только				 |
+|защитникам, когда он пуст. 																																								 |
+| Четыре угловых поля также ограничены и враждебны, как и трон 																																 |
+| Край доски НЕ враждебен. 																			    																					 |
+|																																															 |
+|6. Победа стороны короля (белые)																		   																					 |
+| Если король достигает любого углового поля, король сбегает, и его сторона побеждает:																										 |
+|    - - - -																																												 |
+|         H|																																												 |
+|    	   |																																												 |
+|																																															 |
+|7. Победа стороны гиганта (темные)																																							 |
+|  Гиганты побеждают, если могут захватить короля.																																			 |
+| Король захвачен, когда гиганты окружают его со всех четырех сторон света, за исключением случаев, когда он находится рядом с троном. 														 |
+| Если на поле рядом с троном, гиганты должны занять три оставшихся поля вокруг него.																										 |
+| 																																															 |
+| Король не может быть захвачен на краю доски, ЕСЛИ ТОЛЬКО он не является единственной белой фигурой, оставшейся на доске, и полностью окружен черными (т. е. правило 8). 					 |
+| Король захвачен:														   																												     |
+|																																															 |
+| # # B # # 																																												 |
+| # B H B #																																													 |
+| # # B # #																																													 |
+|																																															 |
+| Король не захвачен:																				  																						 |
+|																																															 |
+| # # # # # 																																												 |
+| # B H B #																																													 |
+| # # # # #																																													 |
+|																																															 |
+|8. Если игрок не может совершить ход, победа присуждается противнику																														 |
+|																																															 |	
+@============================================================================================================================================================================================@
